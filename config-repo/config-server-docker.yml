@@ -7,7 +7,7 @@ spring:
     config:
           server:
             git:
-              uri: https://github.com/youceyf11/Phd_Tracking-Portal-config-repo.git
+              uri: https://github.com/youceyf11/Phd-Tracking-Portal-config-repo.git
               search-paths: config-repo
               default-label: main
 
