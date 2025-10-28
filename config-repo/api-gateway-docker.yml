@@ -26,6 +26,15 @@ spring:
                 name: userServiceCircuitBreaker
                 fallbackUri: forward:/fallback/users
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
 resilience4j:
   circuitbreaker:
     instances:
