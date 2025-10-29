@@ -25,9 +25,18 @@ eureka:
     hostname: user-service
     prefer-ip-address: false
 
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.boot: DEBUG
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000

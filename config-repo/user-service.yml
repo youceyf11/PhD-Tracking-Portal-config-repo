@@ -26,6 +26,11 @@ spring:
     init:
       mode: always
 
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.boot: DEBUG
 
 jwt:
   secret: ${JWT_SECRET}
