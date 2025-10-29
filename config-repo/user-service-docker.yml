@@ -17,8 +17,6 @@ spring:
     username: postgres
     password: postgres
 
-
-
 eureka:
   client:
     service-url:
