@@ -1,9 +1,7 @@
 server:
   port: 8888
 
-
-  profiles:
-    active: docker
+spring:
   cloud:
     config:
           server:
