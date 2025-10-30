@@ -22,7 +22,7 @@ spring:
                 name: userServiceCircuitBreaker
                 fallbackUri: forward:/fallback/users
         - id: eureka-server
-          uri: http://eureka-server:8761
+          uri: http://localhost:8761
           predicates:
             - Path=/eureka/**
       globalcors:
