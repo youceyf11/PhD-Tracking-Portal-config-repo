@@ -8,7 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/youceyf11/PhD-Tracking-Portal-config-repo
+          uri: https://github.com/youceyf11/PhD-Tracking-Portal-config-repo.git
+          search-paths: config-repo
         health:
           enabled: true
 
