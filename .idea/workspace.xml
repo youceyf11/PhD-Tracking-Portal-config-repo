@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45029801-33ed-4ac5-b39e-55da1a624385" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +47,19 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="PhD-Tracking-Portal-config-repo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="PhD-Tracking-Portal-config-repo" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -97,6 +111,9 @@
       <workItem from="1761848678062" duration="115000" />
       <workItem from="1761849222306" duration="454000" />
       <workItem from="1761849744348" duration="4000" />
+      <workItem from="1761849850953" duration="166000" />
+      <workItem from="1761850510323" duration="14000" />
+      <workItem from="1761908716095" duration="183000" />
     </task>
     <servers />
   </component>
