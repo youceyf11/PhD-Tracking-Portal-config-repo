@@ -1,11 +1,11 @@
 spring:
   application:
     name: eureka-server
+  config:
+    import: configserver:http://config-server:8888/
+
   cloud:
     config:
-      spring:
-        config:
-          import: configserver:http://config-server:8888/
       fail-fast: false
       retry:
         max-attempts: 6
