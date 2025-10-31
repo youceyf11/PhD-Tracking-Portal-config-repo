@@ -9,7 +9,8 @@ spring:
               uri: https://github.com/youceyf11/Phd-Tracking-Portal-config-repo.git
               search-paths: config-repo
               default-label: main
-
+              request-connect-timeout: 10000
+              request-read-timeout: 10000
 
 
 
