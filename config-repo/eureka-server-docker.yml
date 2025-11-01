@@ -23,6 +23,7 @@ eureka:
     fetch-registry: false
   instance:
     hostname: eureka-server
+  prefer-ip-address: false
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 10000
@@ -33,3 +34,5 @@ management:
     web:
       exposure:
         include: "*"
+
+
