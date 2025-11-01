@@ -42,6 +42,8 @@ management:
     web:
       exposure:
         include: "*"
+  security:
+    enabled: false
 
 jwt:
   secret: tRomhJ1bWYx/2GRhM3gXFcH4MO48su12vBaEhYU0dG+EWoEXJb2uIh4i5WqTI2FCRiyCuuq2yT/CRL+0Oh2Ehw==

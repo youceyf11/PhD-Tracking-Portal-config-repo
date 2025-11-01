@@ -44,19 +44,6 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="config-repo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="config-repo" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,6 +82,7 @@
       <workItem from="1761996913882" duration="78000" />
       <workItem from="1761997088357" duration="6000" />
       <workItem from="1761997401517" duration="4000" />
+      <workItem from="1761999200306" duration="14000" />
     </task>
     <servers />
   </component>
