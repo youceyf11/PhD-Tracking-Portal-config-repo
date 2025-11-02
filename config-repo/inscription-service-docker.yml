@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user-service
+    name: inscription-service
   cloud:
     config:
       import: configserver:http://config-server:8888/
@@ -13,7 +13,7 @@ spring:
         initial-interval: 2000
         multiplier: 1.5
   datasource:
-    url: jdbc:postgresql://postgres:5432/phd_tracking
+    url: jdbc:postgresql://postgres:5432/inscription_db
     username: postgres
     password: postgres
 

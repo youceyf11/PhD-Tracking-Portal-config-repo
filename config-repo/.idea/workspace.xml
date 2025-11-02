@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/inscription-service-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inscription-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-docker.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +105,19 @@
       <workItem from="1761999200306" duration="14000" />
       <workItem from="1762003093930" duration="60000" />
       <workItem from="1762006927922" duration="10000" />
+      <workItem from="1762085923188" duration="55000" />
+      <workItem from="1762086001432" duration="306000" />
+      <workItem from="1762101251529" duration="323000" />
+      <workItem from="1762101654664" duration="57000" />
+      <workItem from="1762101810297" duration="61000" />
+      <workItem from="1762101907980" duration="394000" />
+      <workItem from="1762102891605" duration="22000" />
+      <workItem from="1762103520787" duration="486000" />
+      <workItem from="1762104025988" duration="5000" />
+      <workItem from="1762104483681" duration="13000" />
+      <workItem from="1762105707495" duration="284000" />
+      <workItem from="1762107633269" duration="20000" />
+      <workItem from="1762107696029" duration="42000" />
     </task>
     <servers />
   </component>

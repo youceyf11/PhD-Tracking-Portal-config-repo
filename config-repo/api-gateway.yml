@@ -11,20 +11,27 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
+        - id: user-service-auth
+          uri: lb://user-service
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - StripPrefix=1
+
         - id: user-service
           uri: lb://user-service
           predicates:
             - Path=/api/users/**
-          filters:
-            - StripPrefix=1
-            - name: CircuitBreaker
-              args:
-                name: userServiceCircuitBreaker
-                fallbackUri: forward:/fallback/users
+        - id: inscription-service
+          uri: lb://inscription-service
+          predicates:
+              - Path=/api/inscriptions/**
+
         - id: eureka-server
           uri: http://localhost:8761
           predicates:
             - Path=/eureka/**
+
       globalcors:
         cors-configurations:
           '[/**]':
@@ -38,6 +45,10 @@ spring:
             allowed-headers: "*"
             allow-credentials: false
 
+jwt:
+  secret: tRomhJ1bWYx/2GRhM3gXFcH4MO48su12vBaEhYU0dG+EWoEXJb2uIh4i5WqTI2FCRiyCuuq2yT/CRL+0Oh2Ehw==
+  expiration: 86400000
+
 resilience4j:
   circuitbreaker:
     instances:
@@ -46,3 +57,14 @@ resilience4j:
         failure-rate-threshold: 50
         wait-duration-in-open-state: 10000
         permitted-number-of-calls-in-half-open-state: 3
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: api-gateway
+    instance-id: ${spring.application.name}:${random.value}
