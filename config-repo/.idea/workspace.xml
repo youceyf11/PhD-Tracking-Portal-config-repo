@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/eureka-server-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server-docker.yml" afterDir="false" />
-    </list>
+    <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +125,7 @@
       <workItem from="1762179879851" duration="270000" />
       <workItem from="1762180204900" duration="103000" />
       <workItem from="1762180498890" duration="212000" />
+      <workItem from="1762186135710" duration="10000" />
     </task>
     <servers />
   </component>
