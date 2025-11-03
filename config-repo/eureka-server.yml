@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: eureka-server
+  cloud:
+    import: configserver:http://localhost:8888/
+    fail-fast: true
+    retry:
+      max-attempts: 10
+      initial-interval: 2000
+      multiplier: 1.5
 
 eureka:
   instance:
