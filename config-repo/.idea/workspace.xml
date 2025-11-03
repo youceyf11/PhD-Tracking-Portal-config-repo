@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="" />
+    <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inscription-service.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +129,9 @@
       <workItem from="1762180204900" duration="103000" />
       <workItem from="1762180498890" duration="212000" />
       <workItem from="1762186135710" duration="10000" />
+      <workItem from="1762186301845" duration="160000" />
+      <workItem from="1762186495694" duration="5000" />
+      <workItem from="1762200205934" duration="43000" />
     </task>
     <servers />
   </component>
