@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/inscription-service-docker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inscription-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +118,12 @@
       <workItem from="1762105707495" duration="284000" />
       <workItem from="1762107633269" duration="20000" />
       <workItem from="1762107696029" duration="42000" />
+      <workItem from="1762114970459" duration="245000" />
+      <workItem from="1762116727767" duration="12000" />
+      <workItem from="1762176618453" duration="75000" />
+      <workItem from="1762176917330" duration="44000" />
+      <workItem from="1762177132798" duration="45000" />
+      <workItem from="1762177430571" duration="23000" />
     </task>
     <servers />
   </component>
