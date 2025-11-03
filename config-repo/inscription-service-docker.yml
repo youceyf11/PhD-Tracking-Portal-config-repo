@@ -21,9 +21,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
   instance:
-    hostname: user-service
-    prefer-ip-address: false
+    prefer-ip-address: true
+
 
 logging:
   level:
