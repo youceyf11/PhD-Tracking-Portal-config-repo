@@ -4,5 +4,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:${server.port}/eureka/
-  config:
-    import: configserver:http://config-server:8888
+      
