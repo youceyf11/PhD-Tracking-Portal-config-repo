@@ -4,13 +4,6 @@ server:
 spring:
   application:
     name: user-service
-  config:
-      import: configserver:http://config-server:8888/
-      fail-fast: true
-      retry:
-        max-attempts: 10
-        initial-interval: 2000
-        multiplier: 1.5
   datasource:
     url: jdbc:postgresql://postgres:5432/phd_tracking
     username: postgres
