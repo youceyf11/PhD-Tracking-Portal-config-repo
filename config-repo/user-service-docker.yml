@@ -16,6 +16,8 @@ spring:
     url: jdbc:postgresql://postgres:5432/phd_tracking
     username: postgres
     password: postgres
+  kafka:
+    bootstrap-servers: kafka:29092
 
 eureka:
   client:
@@ -25,6 +27,8 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+
+    
 
 
 logging:

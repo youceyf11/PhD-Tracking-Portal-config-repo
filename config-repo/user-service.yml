@@ -23,6 +23,7 @@ spring:
     init:
       mode: always
 
+
 eureka:
   client:
     service-url:
