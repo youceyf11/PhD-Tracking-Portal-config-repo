@@ -4,8 +4,7 @@ server:
 spring:
   application:
     name: user-service
-  cloud:
-    config:
+  config:
       import: configserver:http://config-server:8888/
       fail-fast: true
       retry:

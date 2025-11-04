@@ -4,8 +4,7 @@ server:
 spring:
   application:
     name: inscription-service
-  cloud:
-    config:
+  config:
       import: configserver:http://config-server:8888/
       fail-fast: true
       retry:

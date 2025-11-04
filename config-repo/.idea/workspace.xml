@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/config-server-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inscription-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inscription-service-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-docker.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +136,7 @@
       <workItem from="1762256133480" duration="314000" />
       <workItem from="1762256904156" duration="29000" />
       <workItem from="1762260523561" duration="128000" />
+      <workItem from="1762276296263" duration="252000" />
     </task>
     <servers />
   </component>
