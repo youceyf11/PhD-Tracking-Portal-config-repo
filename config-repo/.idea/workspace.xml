@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd6ca85-f939-43fb-89d7-41409a8f01f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/api-gateway-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inscription-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inscription-service-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inscription-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,11 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="config-repo" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -133,6 +140,11 @@
       <workItem from="1762260523561" duration="128000" />
       <workItem from="1762276296263" duration="252000" />
       <workItem from="1762277323886" duration="256000" />
+      <workItem from="1762278094278" duration="119000" />
+      <workItem from="1762281612893" duration="12000" />
+      <workItem from="1762283105427" duration="22000" />
+      <workItem from="1762352310329" duration="20000" />
+      <workItem from="1762352351499" duration="34000" />
     </task>
     <servers />
   </component>
