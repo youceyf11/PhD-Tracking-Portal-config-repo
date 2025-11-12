@@ -37,6 +37,9 @@ spring:
             - Path=/api/dossiers/**
             - Path=/api/campagnes/**
 
+        - id: soutenance-service
+          uri: lb://soutenance-service
+
       globalcors:
         cors-configurations:
           '[/**]':
