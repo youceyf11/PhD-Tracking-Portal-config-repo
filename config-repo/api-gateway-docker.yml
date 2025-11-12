@@ -39,6 +39,8 @@ spring:
 
         - id: soutenance-service
           uri: lb://soutenance-service
+          predicates:
+              - Path=/api/soutenances/**
 
       globalcors:
         cors-configurations:
