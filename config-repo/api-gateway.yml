@@ -22,15 +22,27 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/users/**
-        - id: inscription-service
-          uri: lb://inscription-service
-          predicates:
-              - Path=/api/inscriptions/**
 
         - id: eureka-server
           uri: http://localhost:8761
           predicates:
             - Path=/eureka/**
+
+        - id: inscription-service
+          uri: lb://inscription-service
+          predicates:
+            - Path=/api/dossiers/**
+            - Path=/api/campagnes/**
+
+        - id: soutenance-service
+          uri: lb://soutenance-service
+          predicates:
+            - Path=/api/soutenances/**
+
+        - id: notification-service
+          uri: lb://notification-service
+          predicates:
+            - Path=/api/notifications/**
 
       globalcors:
         cors-configurations:

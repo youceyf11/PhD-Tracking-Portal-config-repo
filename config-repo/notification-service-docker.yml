@@ -1,0 +1,25 @@
+spring:
+  kafka:
+    consumer:
+      # Connect to the Kafka container inside the Docker network
+      bootstrap-servers: kafka:29092
+
+eureka:
+  client:
+    service-url:
+      # Connect to Eureka container inside the Docker network
+      defaultZone: http://eureka-server:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    # Ensures the ID is unique if you scale up
+    instance-id: ${spring.application.name}:${random.value}
+
+# Feign Client Configuration (Timeouts for Docker networking)
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000

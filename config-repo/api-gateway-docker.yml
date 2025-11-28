@@ -19,7 +19,7 @@ spring:
             - name: CircuitBreaker
               args:
                 name: userServiceCircuitBreaker
-                fallbackUri: forward:/fallback/users
+                fallbackUri: forward:/fallback/usersw
 
         - id: user-service
           uri: lb://user-service
@@ -41,6 +41,11 @@ spring:
           uri: lb://soutenance-service
           predicates:
               - Path=/api/soutenances/**
+
+        - id: notification-service
+          uri : lb://notification-service
+          predicates:
+            - Path=/api/notifications/**
 
       globalcors:
         cors-configurations:
