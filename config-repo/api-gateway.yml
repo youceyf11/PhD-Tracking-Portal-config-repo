@@ -4,79 +4,81 @@ server:
 spring:
   application:
     name: api-gateway
+
+  # Inject JWT Secret (Even if just for pass-through consistency)
+  jwt:
+    secret: ${JWT_SECRET}
+
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
-      routes:
-        - id: user-service-auth
-          uri: lb://user-service
-          predicates:
-            - Path=/api/auth/**
-          filters:
-            - StripPrefix=1
 
+      # --- CORS Configuration (Localhost) ---
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "http://localhost:4200"
+            allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
+            allowed-headers: "*"
+            allow-credentials: true
+
+      routes:
+        # User Service
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/api/users/**
+            - Path=/api/auth/**, /api/users/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: userServiceCircuitBreaker
+                fallbackUri: forward:/fallback/users
 
-        - id: eureka-server
-          uri: http://localhost:8761
-          predicates:
-            - Path=/eureka/**
-
+        # Inscription Service
         - id: inscription-service
           uri: lb://inscription-service
           predicates:
-            - Path=/api/dossiers/**
-            - Path=/api/campagnes/**
+            - Path=/api/dossiers/**, /api/campagnes/**, /api/validations/**
 
+        # Soutenance Service
         - id: soutenance-service
           uri: lb://soutenance-service
           predicates:
             - Path=/api/soutenances/**
 
+        # Notification Service
         - id: notification-service
           uri: lb://notification-service
           predicates:
             - Path=/api/notifications/**
 
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowed-origins: "*"
-            allowed-methods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-              - OPTIONS
-            allowed-headers: "*"
-            allow-credentials: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
 
-jwt:
-  secret: eff0b04e11afd0953162681fff8a48d1f8e2dddf67b4df1ce247bf77cc487bfe
-  expiration: 86400000
-
+# Resilience / Circuit Breaker
 resilience4j:
   circuitbreaker:
     instances:
       userServiceCircuitBreaker:
         sliding-window-size: 10
         failure-rate-threshold: 50
-        wait-duration-in-open-state: 10000
+        wait-duration-in-open-state: 10s
         permitted-number-of-calls-in-half-open-state: 3
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    prefer-ip-address: true
-    hostname: api-gateway
-    instance-id: ${spring.application.name}:${random.value}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always
