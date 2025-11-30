@@ -47,5 +47,5 @@ management:
     enabled: false
 
 jwt:
-  secret: "eff0b04e11afd0953162681fff8a48d1f8e2dddf67b4df1ce247bf77cc487bfe"
+  secret: "f8f7774f73681dc79e046dbb424806c496012376a556903c9a8f3213c8352a7b"
   expiration: 86400000
