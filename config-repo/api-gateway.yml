@@ -1,9 +1,14 @@
 server:
   port: 8080
+  netty:
+    connection-timeout:
 
 spring:
   application:
     name: api-gateway
+
+  main:
+    web-application-type: reactive
 
   # Inject JWT Secret (Even if just for pass-through consistency)
   jwt:
@@ -15,6 +20,9 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+    httpclient:
+      connect-timeout: 10000
+      response-timeout: 50s
 
       # --- CORS Configuration (Localhost) ---
       globalcors:
