@@ -1,7 +1,7 @@
 server:
   port: 8080
   netty:
-    connection-timeout:
+    connection-timeout: 60000
 
 spring:
   application:
@@ -10,7 +10,6 @@ spring:
   main:
     web-application-type: reactive
 
-  # Inject JWT Secret (Even if just for pass-through consistency)
   jwt:
     secret: ${JWT_SECRET}
 
@@ -20,11 +19,11 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-    httpclient:
-      connect-timeout: 10000
-      response-timeout: 50s
 
-      # --- CORS Configuration (Localhost) ---
+      httpclient:
+        connect-timeout: 10000
+        response-timeout: 50s
+
       globalcors:
         cors-configurations:
           '[/**]':
@@ -39,7 +38,6 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/auth/**, /api/users/**
-         
 
         # Inscription Service
         - id: inscription-service
@@ -68,7 +66,7 @@ eureka:
   instance:
     prefer-ip-address: true
 
-# Resilience / Circuit Breaker
+# Resilience (Optional, but good to keep)
 resilience4j:
   circuitbreaker:
     instances:
